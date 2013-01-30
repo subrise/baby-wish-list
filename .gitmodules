@@ -1,0 +1,3 @@
+[submodule "modules/kohana-email"]
+	path = modules/kohana-email
+	url = https://github.com/digitaljohn/kohana-email.git
