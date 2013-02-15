@@ -4,7 +4,14 @@ class Controller_Welcome extends Controller {
 
 	public function action_index()
 	{
-		$this->response->body('hello, world!');
+		$view = View::factory('front');
+		$this->response->body($view);
+	}
+	
+	public function action_test()
+	{
+		$view = View::factory('feedback_signup_email');
+		$this->response->body($view);
 	}
 
 } // End Welcome
